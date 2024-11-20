@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="andra.ico">
+    <title>Web Pembelajaran</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8ff; /* Light cyan for the body */
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 48px;
+            color: #2e4053; /* Dark slate blue for header */
+            margin-bottom: 10px;
+            background-color: #ffeb3b; /* Bright yellow background */
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: #2980b9; /* Bright blue for subheadings */
+        }
+
+        h4 {
+            font-size: 24px;
+            color: #d35400; /* Orange for additional info */
+        }
+
+        p {
+            font-size: 24px;
+            color: #555;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #8e44ad; /* Purple for navbar */
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            font-size: 24px;
+            color: #ffffff; /* White text for contrast */
+            padding: 20px 40px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown {
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 24px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 20px 40px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #732d91; /* Darker purple for hover */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1abc9c; /* Turquoise for dropdown background */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: whitesmoke;
+            padding: 16px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: background-color 0.3s ease;
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ffffff; /* White for dropdown item hover */
+            color: #2980b9; /* Blue text on hover */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .content {
+            flex: 3;
+            padding: 20px;
+            text-align: left;
+            background-color: #ffffff; /* White background for main content */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f39c12; /* Orange for sidebar */
+            margin-left: 20px;
+            border-radius: 8px;
+            color: white; /* White text in sidebar */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #c0392b; /* Red for footer */
+            color: white;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px; /* Set a fixed height for the iframe */
+            border: none; /* Remove border */
+            border-radius: 8px; /* Round the corners */
+            margin-top: 20px; /* Add space above the iframe */
+        }
+    </style>
+</head>
+<body>
+    <h2>Web Pembelajaran</h2>
+    <div id="welcomeText">
+        <h3>Selamat datang Kanisian!</h3>
+        <h4>Diproduksi oleh Aurelius Kumara Andradinata</h4>
+        <p>WEB ini akan berisi berbagai macam pembelajaran yang sudah saya pelajari di Kelas Peminatan saya<br>
+        Semoga dengan website ini kamu dapat terbantu mendapatkan gambaran mengenai pembelajaran di mata pelajaran peminatan tersebut <br> 
+        sehingga kamu tidak perlu bingung memilih</p>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+            
+
+        <div class="dropdown">
+            <button class="dropbtn">Biologi</button>
+            <div class="dropdown-content">
+                <a href="respirasi.html">Respirasi</a>
+                <a href="konsep ilmu biologi.html">Konsep Ilmu Biologi</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">TIK</button>
+            <div class="dropdown-content">
+                <a href="CSS.html">CSS</a>
+                <a href="HTML.html">HTML</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Kimia</button>
+            <div class="dropdown-content">
+                <a href="Reaksipenggaraman.html">Reaksi Penggaraman</a>
+                <a href="termokimia.html">Termokimia</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Sosiologi</button>
+            <div class="dropdown-content">
+                <a href="kelompoksosial.html">Kelompok Sosial</a>
+                <a href="Permasalahan Sosial.html">Permasalahan Sosial</a>
+                <a href="Perbedaan dan Kesetaraan Sosial.html">Perbedaan dan Kesetaraan Sosial Sosial</a>
+                <a href="Multikultural.html">Multikultural</a>
+                <a href="Mobilitas Sosial.html">Mobilitas Sosial</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Tentang Saya</button>
+            <div class="dropdown-content">
+                <a href="perkenalan.html">Profil</a>
+                <a href="jadwal.html">Jadwal Harian</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h2>Apa itu Penggaraman Kimia?</h2>
+            <p>Penggaraman kimia adalah reaksi yang melibatkan pembentukan garam melalui reaksi antara asam dan basa. Proses ini sangat penting dalam kimia, karena garam yang terbentuk dapat digunakan dalam berbagai aplikasi industri, medis, dan dalam kehidupan sehari-hari.</p>
+    
+            <h2>Reaksi Umum Penggaraman Kimia</h2>
+            <p>Secara umum, reaksi penggaraman kimia mengikuti pola berikut:</p>
+            <pre>
+            Asam + Basa → Garam + Air
+            </pre>
+    
+            <p>Contoh reaksi penggaraman yang umum adalah reaksi antara asam klorida (HCl) dan natrium hidroksida (NaOH):</p>
+            <pre>
+            HCl (aq) + NaOH (aq) → NaCl (aq) + H2O (l)
+            </pre>
+    
+            <h2>Jenis-jenis Penggaraman Kimia</h2>
+            <ul>
+                <li><strong>Penggaraman Asam Kuat dengan Basa Kuat:</strong> Ini adalah reaksi penggaraman yang paling umum, di mana asam kuat (seperti HCl) bereaksi dengan basa kuat (seperti NaOH).</li>
+                <li><strong>Penggaraman Asam Kuat dengan Basa Lemah:</strong> Asam kuat bereaksi dengan basa lemah, menghasilkan garam dan air. Misalnya, HCl dengan amonia (NH3).</li>
+                <li><strong>Penggaraman Asam Lemah dengan Basa Lemah:</strong> Reaksi antara asam lemah dan basa lemah menghasilkan garam yang dapat terurai dalam air.</li>
+            </ul>
+    
+            <h2>Contoh Lain Penggaraman</h2>
+            <p>Beberapa contoh reaksi penggaraman lainnya adalah:</p>
+            <pre>
+            H2SO4 (aq) + 2NaOH (aq) → Na2SO4 (aq) + 2H2O (l)
+            </pre>
+            <p>Pada reaksi ini, asam sulfat (H2SO4) bereaksi dengan natrium hidroksida (NaOH) untuk menghasilkan natrium sulfat (Na2SO4) dan air.</p>
+    
+            <h2>Manfaat Penggaraman Kimia</h2>
+            <p>Reaksi penggaraman kimia tidak hanya penting dalam industri kimia, tetapi juga memiliki manfaat lainnya, seperti:</p>
+            <ul>
+                <li>Penggunaan dalam pembuatan pupuk, seperti amonium nitrat (NH4NO3).</li>
+                <li>Penggunaan dalam pembuatan sabun dan deterjen.</li>
+                <li>Penggunaan dalam pengolahan air untuk menghilangkan kotoran atau zat berbahaya.</li>
+            </ul>
+        </div>
+        <div class="sidebar">
+            <h3>Informasi Tambahan</h3>
+            <p>Untuk pihak yang tertarik untuk memasang iklan disini.</p>
+            <p>Silahkan mengontak pemilik web</p>
+        </div>
+    </div>
+    <div>
+        <p>Karena berbagai pembelajaran sempat tertunda karena CC CUP XXXIX, silakan gunakan web ini untuk mengejar materi yang ketinggalan.</p>
+        <h3>Special Thanks to VSC</h3>
+        <p>Terima kasih kepada Visual Studio Code yang memungkinkan saya untuk membuat site ini</p>
+        <h3>Special Thanks to Pak Eddy</h3>
+        <p>Sebagai inspirasi jenis site yang saya buat ini!</p>
+        <iframe id="wikiFrame" src="" title="Content"></iframe>
+    </div>
+        
+
+
+    <footer>
+        <h2>Disusun oleh Aurelius Kumara Andradinata</h2>
+    </footer>
+
+ 
